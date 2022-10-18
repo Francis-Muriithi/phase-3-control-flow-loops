@@ -22,19 +22,20 @@ def fizzbuzz(num)
   end
 end
 
-def fizzbuzz_printer
-  num = 0
-  while num <= 99
-    puts num += 1
-    if num % 3 == 0
-     puts "Fizz"
-    end
-    if num % 5 == 0
-      puts "Buzz"
-    end
+def fizzbuzz_printer (n)
+  (1..n).map do |num|
+    if num% == 0 && num % 5 == 0
+      "FizzBuzz"
+    elsif num % 3 == 0
+      "Fizz"
+    elsif num % 5 == 0
+      "Buzz"
+    else 
+      num
+    end 
   end
 end
-fizzbuzz_printer
+fizzbuzz_printer (n)
 
 
 
