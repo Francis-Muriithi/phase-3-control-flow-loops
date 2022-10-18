@@ -1,11 +1,11 @@
 
 def happy_new_year
   i = 10
-  while i> 1
+  while i> 0
     puts "#{i}"
     i -= 1
   end
-  puts "Happy New Year!!!"
+  puts "Happy New Year!"
 end
 
 
@@ -22,13 +22,20 @@ def fizzbuzz(num)
   end
 end
 
-def fizzbuzz_printer (num)
+def fizzbuzz_printer
   num = 0
-  while num <= 100
-    puts num
-    num += 1
+  while num <= 99
+    puts num += 1
+    if num % 3 == 0
+     puts "Fizz"
+    end
+    if num % 5 == 0
+      puts "Buzz"
+    end
   end
 end
+fizzbuzz_printer
+
 
 
 def reverse_string(str)
