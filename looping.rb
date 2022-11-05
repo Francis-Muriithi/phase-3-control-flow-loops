@@ -22,22 +22,11 @@ def fizzbuzz(num)
   end
 end
 
-def fizzbuzz_printer (n)
-  (1..n).map do |num|
-    if num% == 0 && num % 5 == 0
-      "FizzBuzz"
-    elsif num % 3 == 0
-      "Fizz"
-    elsif num % 5 == 0
-      "Buzz"
-    else 
-      num
-    end 
+def fizzbuzz_printer
+  (1..100).each do |num|
+    puts fizzbuzz(num)
   end
 end
-fizzbuzz_printer (n)
-
-
 
 def reverse_string(str)
     reversed_string = ''
